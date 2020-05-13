@@ -3,7 +3,7 @@ source 'https://rails-assets.org'
 
 ruby '2.1.2'
 
-gem 'rails', '~> 3.2'
+gem 'rails', '~> 4.0', '>= 4.0.0'
 
 gem 'sass', '~> 3.2.9'
 gem 'coffee-rails', '~> 3.2.1'
@@ -17,7 +17,7 @@ gem 'rails-assets-font-awesome'
 gem 'rails-assets-jquery-dropdown'
 
 # Two Client-side JS frameworks. Yep, first one to refactor out the other wins.
-gem 'backbone-on-rails'
+gem 'backbone-on-rails', '>= 1.1.1.0'
 gem 'handlebars-source'
 gem 'ember-rails', github: 'emberjs/ember-rails'
 
@@ -94,7 +94,7 @@ gem 'foreman'
 gem 'awesome_print'
 
 gem 'faraday', '~> 0.8.1'
-gem 'metamagic'
+gem 'metamagic', '>= 3.1.3'
 
 # ----------------
 
@@ -113,7 +113,7 @@ gem 'never_wastes'
 gem 'octokit'
 gem 'pubnub', '0.1.9'
 gem 'querystring'
-gem 'rails_autolink'
+gem 'rails_autolink', '>= 1.1.6'
 gem 'rakismet'
 gem 'ruby-progressbar'
 gem 'sanitize'
