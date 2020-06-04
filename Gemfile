@@ -61,7 +61,7 @@ gem 'grackle'
 gem 'twitter'
 
 # Paging
-gem 'kaminari'
+gem 'kaminari', '>= 1.2.1'
 
 # Date parsing
 gem 'chronic'
