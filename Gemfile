@@ -3,21 +3,21 @@ source 'https://rails-assets.org'
 
 ruby '2.1.2'
 
-gem 'rails', '~> 3.2'
+gem 'rails', '~> 5.0', '>= 5.0.0'
 
 gem 'sass', '~> 3.2.9'
-gem 'coffee-rails', '~> 3.2.1'
+gem 'coffee-rails', '~> 4.1.1'
 gem 'compass-rails'
-gem 'sass-rails', '~> 3.2.6'
+gem 'sass-rails', '~> 5.0.5'
 gem 'uglifier', '>= 1.0.3'
 # Assets
 gem 'autoprefixer-rails'
-gem 'jquery-rails', '= 2.0.3'
+gem 'jquery-rails', '= 4.4.0'
 gem 'rails-assets-font-awesome'
 gem 'rails-assets-jquery-dropdown'
 
 # Two Client-side JS frameworks. Yep, first one to refactor out the other wins.
-gem 'backbone-on-rails'
+gem 'backbone-on-rails', '>= 1.1.1.0'
 gem 'handlebars-source'
 gem 'ember-rails', github: 'emberjs/ember-rails'
 
@@ -32,8 +32,8 @@ gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
 
 # HTML
 gem 'haml'
-gem 'hamlbars' #haml support for handlebars/ember.js
-gem 'slim-rails'
+gem 'hamlbars' , '>= 2.1.1' #haml support for handlebars/ember.js
+gem 'slim-rails', '>= 3.1.0'
 
 # Postgres
 gem 'pg'
@@ -42,11 +42,11 @@ gem 'pg'
 gem 'clockwork'
 
 # Authentication
-gem 'omniauth', '~> 1.1.0'
-gem 'omniauth-facebook'
-gem 'omniauth-github'
-gem 'omniauth-linkedin', '~> 0.0.6'
-gem 'omniauth-twitter', '~> 0.0.16'
+gem 'omniauth', '~> 1.1.4'
+gem 'omniauth-facebook', '>= 1.6.0'
+gem 'omniauth-github', '>= 1.1.2'
+gem 'omniauth-linkedin', '~> 0.0.8'
+gem 'omniauth-twitter', '~> 0.0.18'
 
 # Markdown
 gem 'redcarpet' #markdown processing
@@ -61,17 +61,17 @@ gem 'grackle'
 gem 'twitter'
 
 # Paging
-gem 'kaminari'
+gem 'kaminari', '>= 0.16.1'
 
 # Date parsing
 gem 'chronic'
 
 # Redis
-gem 'redis-rails', '~> 3.2'
+gem 'redis-rails', '~> 5.0', '>= 5.0.0'
 
 
 gem 'sidekiq'
-gem 'sinatra'
+gem 'sinatra', '>= 2.0.0'
 
 # Payment processing
 gem 'stripe', github: 'stripe/stripe-ruby'
@@ -94,7 +94,7 @@ gem 'foreman'
 gem 'awesome_print'
 
 gem 'faraday', '~> 0.8.1'
-gem 'metamagic'
+gem 'metamagic', '>= 3.1.3'
 
 # ----------------
 
@@ -108,18 +108,18 @@ gem 'geocoder'
 gem 'hashie'
 gem 'linkedin'
 gem 'mini_magick'
-gem 'mixpanel'
+gem 'mixpanel', '>= 4.1.1'
 gem 'never_wastes'
 gem 'octokit'
 gem 'pubnub', '0.1.9'
 gem 'querystring'
-gem 'rails_autolink'
+gem 'rails_autolink', '>= 1.1.6'
 gem 'rakismet'
 gem 'ruby-progressbar'
 gem 'sanitize'
-gem 'simple_form'
+gem 'simple_form', '>= 3.2.1'
 gem 'tweet-button'
-gem 'local_time'
+gem 'local_time', '>= 1.0.0'
 
 # DROP BEFORE RAILS 4
 # Mongo
@@ -130,10 +130,10 @@ gem 'bson_ext'
 #Tagging
 gem 'rocket_tag'
 gem 'squeel', '1.0.1'
-gem 'strong_parameters'
+gem 'strong_parameters', '>= 0.2.3'
 gem 'postgres_ext'
 group :production do
-  gem 'heroku_rails_deflate'
+  gem 'heroku_rails_deflate', '>= 1.0.3'
 end
 # ElasticSearch client
 gem 'tire'
@@ -152,22 +152,22 @@ group :development do
 end
 
 group :development, :test do
-  gem 'fabrication-rails'
+  gem 'fabrication-rails', '>= 0.0.1'
   gem 'ffaker'
   gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
   gem 'launchy'
   gem 'pry-byebug'
   gem 'pry-rescue'
-  gem 'quiet_assets'
+  gem 'quiet_assets', '>= 1.0.3'
   gem 'syntax'
   gem 'annotate'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.0.2'
 end
 
 group :test do
   # gem 'rspec-its'
   gem "codeclimate-test-reporter", require: false
-  gem 'capybara'
+  gem 'capybara', '>= 2.4.1'
   gem 'database_cleaner'
   gem 'fuubar', '2.0.0.rc1'
   gem 'simplecov'
@@ -180,6 +180,6 @@ end
 group :production do
   gem 'airbrake'
   gem 'newrelic_rpm'
-  gem 'puma'
+  gem 'puma', '>= 2.12.0'
   gem 'rails_12factor'
 end
