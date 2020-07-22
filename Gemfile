@@ -50,7 +50,7 @@ gem 'omniauth-twitter', '~> 0.0.16'
 
 # Markdown
 gem 'redcarpet' #markdown processing
-gem 'kramdown'
+gem 'kramdown', '>= 2.3.0'
 gem 'github-markdown'
 
 # XML
