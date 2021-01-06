@@ -54,7 +54,7 @@ gem 'kramdown'
 gem 'github-markdown'
 
 # XML
-gem 'nokogiri'
+gem 'nokogiri', '>= 1.11.0'
 
 # Twitter API client
 gem 'grackle'
@@ -77,7 +77,7 @@ gem 'sinatra'
 gem 'stripe', github: 'stripe/stripe-ruby'
 
 # RSS parsing
-gem 'feedjira'
+gem 'feedjira', '>= 1.4.0'
 
 # HTTP client
 gem 'rest-client'
@@ -103,7 +103,7 @@ gem 'acts_as_commentable', '2.0.1'
 gem 'acts_as_follower', '0.1.1'
 gem 'color'
 gem 'createsend'
-gem 'fog'
+gem 'fog', '>= 1.23.0'
 gem 'geocoder'
 gem 'hashie'
 gem 'linkedin'
@@ -116,7 +116,7 @@ gem 'querystring'
 gem 'rails_autolink'
 gem 'rakismet'
 gem 'ruby-progressbar'
-gem 'sanitize'
+gem 'sanitize', '>= 3.0.0'
 gem 'simple_form'
 gem 'tweet-button'
 gem 'local_time'
@@ -167,7 +167,7 @@ end
 group :test do
   # gem 'rspec-its'
   gem "codeclimate-test-reporter", require: false
-  gem 'capybara'
+  gem 'capybara', '>= 2.4.1'
   gem 'database_cleaner'
   gem 'fuubar', '2.0.0.rc1'
   gem 'simplecov'
