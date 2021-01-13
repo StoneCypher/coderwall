@@ -42,14 +42,14 @@ gem 'pg'
 gem 'clockwork'
 
 # Authentication
-gem 'omniauth', '~> 1.1.0'
-gem 'omniauth-facebook'
-gem 'omniauth-github'
+gem 'omniauth', '~> 2.0.0'
+gem 'omniauth-facebook', '>= 1.6.0'
+gem 'omniauth-github', '>= 2.0.0'
 gem 'omniauth-linkedin', '~> 0.0.6'
 gem 'omniauth-twitter', '~> 0.0.16'
 
 # Markdown
-gem 'redcarpet' #markdown processing
+gem 'redcarpet' , '>= 3.5.1' #markdown processing
 gem 'kramdown'
 gem 'github-markdown'
 
