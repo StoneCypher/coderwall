@@ -45,8 +45,8 @@ gem 'clockwork'
 gem 'omniauth', '~> 1.1.0'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
-gem 'omniauth-linkedin', '~> 0.0.6'
-gem 'omniauth-twitter', '~> 0.0.16'
+gem 'omniauth-linkedin', '~> 0.0.8'
+gem 'omniauth-twitter', '~> 0.0.18'
 
 # Markdown
 gem 'redcarpet' #markdown processing
@@ -57,7 +57,7 @@ gem 'github-markdown'
 gem 'nokogiri'
 
 # Twitter API client
-gem 'grackle'
+gem 'grackle', '>= 0.3.0'
 gem 'twitter'
 
 # Paging
@@ -106,7 +106,7 @@ gem 'createsend'
 gem 'fog'
 gem 'geocoder'
 gem 'hashie'
-gem 'linkedin'
+gem 'linkedin', '>= 0.4.7'
 gem 'mini_magick'
 gem 'mixpanel'
 gem 'never_wastes'
