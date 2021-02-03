@@ -45,8 +45,8 @@ gem 'clockwork'
 gem 'omniauth', '~> 1.1.0'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
-gem 'omniauth-linkedin', '~> 0.0.6'
-gem 'omniauth-twitter', '~> 0.0.16'
+gem 'omniauth-linkedin', '~> 0.0.8'
+gem 'omniauth-twitter', '~> 0.0.18'
 
 # Markdown
 gem 'redcarpet' #markdown processing
