@@ -26,9 +26,9 @@ gem 'dotenv-rails', groups: [:development, :test]
 
 
 # Attachements
-gem 'carrierwave'
+gem 'carrierwave', '>= 1.3.2'
 gem 'carrierwave_backgrounder' #background processing of images
-gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
+gem 'carrierwave-mongoid', '>= 1.2.0', require: 'carrierwave/mongoid'
 
 # HTML
 gem 'haml'
