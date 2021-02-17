@@ -3,7 +3,7 @@ source 'https://rails-assets.org'
 
 ruby '2.1.2'
 
-gem 'rails', '~> 3.2'
+gem 'rails', '~> 6.0', '>= 6.0.3.5'
 
 gem 'sass', '~> 3.2.9'
 gem 'coffee-rails', '~> 3.2.1'
@@ -94,7 +94,7 @@ gem 'foreman'
 gem 'awesome_print'
 
 gem 'faraday', '~> 0.8.1'
-gem 'metamagic'
+gem 'metamagic', '>= 3.1.3'
 
 # ----------------
 
@@ -113,7 +113,7 @@ gem 'never_wastes'
 gem 'octokit'
 gem 'pubnub', '0.1.9'
 gem 'querystring'
-gem 'rails_autolink'
+gem 'rails_autolink', '>= 1.1.6'
 gem 'rakismet'
 gem 'ruby-progressbar'
 gem 'sanitize'
