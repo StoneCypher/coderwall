@@ -3,21 +3,21 @@ source 'https://rails-assets.org'
 
 ruby '2.1.2'
 
-gem 'rails', '~> 3.2'
+gem 'rails', '~> 6.0', '>= 6.0.3.5'
 
 gem 'sass', '~> 3.2.9'
-gem 'coffee-rails', '~> 3.2.1'
+gem 'coffee-rails', '~> 4.2.2'
 gem 'compass-rails'
-gem 'sass-rails', '~> 3.2.6'
+gem 'sass-rails', '~> 5.0.8'
 gem 'uglifier', '>= 1.0.3'
 # Assets
 gem 'autoprefixer-rails'
-gem 'jquery-rails', '= 2.0.3'
+gem 'jquery-rails', '= 4.0.1'
 gem 'rails-assets-font-awesome'
 gem 'rails-assets-jquery-dropdown'
 
 # Two Client-side JS frameworks. Yep, first one to refactor out the other wins.
-gem 'backbone-on-rails'
+gem 'backbone-on-rails', '>= 1.1.1.0'
 gem 'handlebars-source'
 gem 'ember-rails', github: 'emberjs/ember-rails'
 
@@ -33,7 +33,7 @@ gem 'carrierwave-mongoid', require: 'carrierwave/mongoid'
 # HTML
 gem 'haml'
 gem 'hamlbars' #haml support for handlebars/ember.js
-gem 'slim-rails'
+gem 'slim-rails', '>= 3.1.0'
 
 # Postgres
 gem 'pg'
@@ -61,13 +61,13 @@ gem 'grackle'
 gem 'twitter'
 
 # Paging
-gem 'kaminari'
+gem 'kaminari', '>= 0.16.1'
 
 # Date parsing
 gem 'chronic'
 
 # Redis
-gem 'redis-rails', '~> 3.2'
+gem 'redis-rails', '~> 5.0', '>= 5.0.2'
 
 
 gem 'sidekiq'
@@ -94,7 +94,7 @@ gem 'foreman'
 gem 'awesome_print'
 
 gem 'faraday', '~> 0.8.1'
-gem 'metamagic'
+gem 'metamagic', '>= 3.1.3'
 
 # ----------------
 
@@ -113,13 +113,13 @@ gem 'never_wastes'
 gem 'octokit'
 gem 'pubnub', '0.1.9'
 gem 'querystring'
-gem 'rails_autolink'
+gem 'rails_autolink', '>= 1.1.6'
 gem 'rakismet'
 gem 'ruby-progressbar'
 gem 'sanitize'
-gem 'simple_form'
+gem 'simple_form', '>= 4.0.0'
 gem 'tweet-button'
-gem 'local_time'
+gem 'local_time', '>= 1.0.0'
 
 # DROP BEFORE RAILS 4
 # Mongo
@@ -133,7 +133,7 @@ gem 'squeel', '1.0.1'
 gem 'strong_parameters'
 gem 'postgres_ext'
 group :production do
-  gem 'heroku_rails_deflate'
+  gem 'heroku_rails_deflate', '>= 1.0.3'
 end
 # ElasticSearch client
 gem 'tire'
@@ -152,7 +152,7 @@ group :development do
 end
 
 group :development, :test do
-  gem 'fabrication-rails'
+  gem 'fabrication-rails', '>= 0.0.1'
   gem 'ffaker'
   gem 'jazz_hands', github: 'nixme/jazz_hands', branch: 'bring-your-own-debugger'
   gem 'launchy'
@@ -161,7 +161,7 @@ group :development, :test do
   gem 'quiet_assets'
   gem 'syntax'
   gem 'annotate'
-  gem 'rspec-rails'
+  gem 'rspec-rails', '>= 3.0.2'
 end
 
 group :test do
